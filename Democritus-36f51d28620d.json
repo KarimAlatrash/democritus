@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "democritus",
+  "private_key_id": "36f51d28620da1f77ad21fd27f2ddf22675ea95d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD6hE2tBJ9WWOY9\n0uuuYWjcpHc3zi65a6T25AuMnY4WtFHyL0K/+JClrHreUiqtEUQ+pcuG8fs3E+XF\nDg8u8/MDt0IUxTXJ/z4aETjM6ailKqznXWbT4kkU83KnujWsRpkuT6OssaBhr+hN\n8t+6rgp+oClEe2l6spUp0pyvRMIfJPb7Pb3sarpIAU9AIhwExud6saoZdHx/06VI\ntuQ8CC27jcqKnJpzWxIO3yRj08pkRzCCLovYdaDsMfUUlgUvBEt3dzv+1zS2r0wV\n0p6fZSceXTxIneTEfbo2DppkwlvKw8nyhjjoSUXh5XKjxBa29FpI1VMl1+sOMXK+\n5OuyAZQXAgMBAAECggEAcJyQnjn5tkL4HMp3j0fSb3yu6rMQZeFxoloYpvkcKjCc\ntZVxGAKQYykJgm7FKE8eslqtBtg36SZUnyQWxzB6CS2T0upjp43JSMZ9Ff/jA3wP\nhWGDG7QYzgYxgBxAjFSf/yVlmfeu9LqyXnfTAoPBy/ILGvGvFKy6SLaYIGF0MbL0\ndZua4g/rS6CZGVSOPpMEBkqnwZkOb4CpLf2ac0/uYlS3CZgS3zuHBOUbVPzb2UnG\nL2el0n/jbsA4HIuVG6hoWrfL/0Ka+AU1vLU3J8kaVBOC84FV+HMOYwj+F5/WlfGC\nYTrnuAo2VKTmSi66+8PrizLglI7Nqj8eg9VEqNPx4QKBgQD9WrKByRQDZHXqTHKi\nFM/4wSQ0nsjq0ZCjZRoUcRaaagYlsJlR6skHu+ItfSEyXpfHMpFOkOjJMDx73G1y\nFM0wjlcv0Q4IRYiBZ5GQbQ6HSKeN/gfngVp1nM4IA87z7BntystGhaShxPrQo97w\n3B4+iz+R2yktZ3nbjsYbBswDLQKBgQD9IgVE/LJ3Y1qw0GQEqwbLd8PokGMzVwZH\nCVYtddU7bZaUE+TvR0WwpG1oZ+UpMR6t8yOtL07rjwS+GuTibdUMxXYNcDjwbNcB\nKobRZPrggtQIrFxGy/maH1K0yOXvT2LYNCDITSUxqVl9DwqJ1bOZQ1EJ1rJ5uRkM\nVbtC1XiO0wKBgQCJJdDeCxDHaVmflPS1ItkWSs+joJUY8IsAuJkuma1nt59ORdQp\nkRR0GFQu1b7jumslTQ1132H0jyUe08t3ZyVQdK1j2CJlfeaQTpVw/mhP+ZeiePKk\nctSaOGEb25vrVVMP86ioq23cmHpB+YOVFUNWDiFCfsZCqvI/VYGOXdaQnQKBgQCs\nS7vKeTYAjV/teeqaQs8dLyfp5F2hVFqxf2lpCAtbp/wWTnRFaf3FfiX6Kr2QjB6V\nyClAeDL/oxlXTHb+qEObrcvs2bXn8C1oXcnmPRWGO4aXYLpudegvP6LL6vKXMTHW\nd6TYsanfY6XFubcymoLkjy1ZxQk2UQb7nl8X3rVwgQKBgGqVO4QAnVGFwyw3LaA6\nE9QpNMcgN51Zv1tYQF8Tv9OZZjCju9Psc3oh7nDEff4Qtq+uJ8D7p5ZIZkgH08gU\n1CSfkl3uQhEx/ArqmmeGDhGX8Gf1ySsy0gmboxMbW1msbLouHPjs5ohqUsn8u9D9\nAYTzDziN+wgafytWfJlSO2ux\n-----END PRIVATE KEY-----\n",
+  "client_email": "democritusmanager@democritus.iam.gserviceaccount.com",
+  "client_id": "114279914057330427081",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/democritusmanager%40democritus.iam.gserviceaccount.com"
+}

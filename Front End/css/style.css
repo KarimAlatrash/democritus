@@ -1,0 +1,320 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px  #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+
+/* --- survey --- */
+.container {
+  background: rgba(239, 249, 255, 0.7);
+  margin: 30px auto;
+  width: 40%;
+  overflow: auto;
+ 
+  padding-bottom: 40px;
+  border-radius: 5px;
+	box-shadow: 5px 10px 10px rgba(0,0,0,0.3);
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+	h3 {
+		padding:15px 30px;
+		background:rgb(205, 177, 224);
+		color:#FFF;
+		animation-duration: 2.2s;
+		animation-name: glowit;
+		font: normal 200% Roboto Condensed, sans-serif;
+	}
+
+	@keyframes glowit {
+		0% {
+			background:rgb(205, 177, 224);
+			color:#FFFFFF; 
+		}
+	
+		50% {
+			background:#9c87b4;
+			color:#FFFF00;
+		}
+		100% {
+			background:rgb(205, 177, 224);
+			color:#FFFFFF; 
+		}
+	}
+
+		h2{
+			padding:15px 30px;
+			margin: 0;
+			font-size:20;
+			font: normal 200% Roboto Condensed, sans-serif;
+			color: rgb(117, 112, 117);
+
+		}
+		
+		ul, li {
+			list-style:none;
+			margin:0; 
+			padding:15px 30px;
+			font-size: 15;
+			color: rgb(117, 112, 117);
+
+		}
+		
+		li {
+			padding: 10px 0 10px 0;
+		}
+		
+		input[type="radio"] {
+			margin: 0 10px 0 0;
+		}
+
+		@import url(https://fonts.googleapis.com/css?family=Roboto);
+		
+		.btn-submit{
+			position: relative;
+			width: 170px;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 30px;
+			border: 3px solid  rgb(117, 112, 117);
+			background-color: transparent;
+			text-align: center;
+			color: rgb(117, 112, 117);
+			font-size: 1.2em;
+			transition: all .3s ease-in;
+			-webkit-transition: all .3s ease-in;
+			cursor:pointer;
+			margin:auto;
+ 			 display:block;
+		}
+		
+		.btn-submit:hover{
+			background-color: rgb(205, 177, 224);
+			color: #fff;
+		}
+		
+		.btn-submit.loading{
+			width: 50px!important;
+			border-radius: 100%;
+			border-color: #999;
+			background-color: transparent!important;
+		}
+		
+		.btn-submit.loading span{
+			opacity: 0;
+			visibility: hidden;
+		}
+		
+		.btn-submit::after {
+			content: '';
+			position: absolute;
+			top: -3px;
+			right: -3px;
+			height: 28px;
+			width: 55px;
+			background-color: rgb(205, 177, 224);
+			border-top-left-radius: 55px;
+			border-top-right-radius: 55px;
+			-webkit-animation: 1s linear infinite rotate;
+			animation: 1s linear infinite rotate;
+			animation-delay: .5s;
+			-webkit-transform-origin: 50% 100%;
+			transform-origin: 50% 100%;
+			z-index: 9;
+			opacity: 0;
+		}
+		
+		.btn-submit::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			z-index: -1;
+			background-color: transparent;
+			border-radius: 100%;
+		}
+		
+		.loading::before{
+			z-index: 10;
+		}
+		
+		.loading::after,.loading::before{
+			opacity: 1;
+			transition: opacity .3s ease;
+			-webkit-transition: opacity .3s ease;
+			transition-delay: .4s;
+			-webkit-transition-delay: .4s;
+		}
+		
+		@-webkit-keyframes rotate {
+			from {
+				-webkit-transform: rotate(0deg);
+								transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+								transform: rotate(360deg);
+			}
+		}
+		
+		@keyframes rotate {
+			from {
+				-webkit-transform: rotate(0deg);
+								transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+								transform: rotate(360deg);
+			}
+		}
+		
+		.checked{
+			background-color: rgb(205, 177, 224)!important;
+			position: relative;
+		}
+		
+		.checked::after{
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			width: 25px;
+			height: 25px;
+			background-size: 25px;
+			animation: none;
+			opacity: 1;
+			background-color: transparent;
+			background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTA0LjUwMiw3NS40OTZjLTkuOTk3LTkuOTk4LTI2LjIwNS05Ljk5OC0zNi4yMDQsMEwxNjEuNTk0LDM4Mi4yMDNMNDMuNzAyLDI2NC4zMTFjLTkuOTk3LTkuOTk4LTI2LjIwNS05Ljk5Ny0zNi4yMDQsMCAgICBjLTkuOTk4LDkuOTk3LTkuOTk4LDI2LjIwNSwwLDM2LjIwM2wxMzUuOTk0LDEzNS45OTJjOS45OTQsOS45OTcsMjYuMjE0LDkuOTksMzYuMjA0LDBMNTA0LjUwMiwxMTEuNyAgICBDNTE0LjUsMTAxLjcwMyw1MTQuNDk5LDg1LjQ5NCw1MDQuNTAyLDc1LjQ5NnoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+		}
+		
+		.checked span{
+			opacity: 0;
+			visibility: hidden;
+		}
+
+	 /* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background: #ccc;
+
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*--- gradient text --- */
+
+
+body{
+  font:normal 75% Roboto Condensed, sans-serif;
+	color: lavender;
+
+}
+
+.text {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #7c37d1 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 100;
+}
+
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #201D51;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index:0;
+
+}
+
+
+
+/* Example row */
+
+#row {
+	display: flex;
+	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	background-blend-mode: multiply;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+}
+#heading {
+	font-weight: 600;
+	font-size: 4rem;
+	margin-bottom: 0;
+	outline: none;
+}
+#strapline {
+	font-weight: 300;
+	font-size: 1.4rem;
+	margin-top: .4rem;
+	outline: none;
+}
+
+.button {
+	display: flex;
+    padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	vertical-align: top;
+}
+
+/* Fonts */
+
+/*
+
+.Impact {
+	font-family: "Impact", sans-serif;
+}
+
